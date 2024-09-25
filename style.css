@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: system-ui, sans-serif;
+}
+*::before, *::after {
+    box-sizing: inherit;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+span, a, label {
+    display: inline-block;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.title {
+    font-size: 45px;
+    text-align: center;
+}
+.categories {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+.category {
+    border: 2px solid black;
+    color: black;
+    background-color: transparent;
+    font-size: 20px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+.active {
+    background-color: black;
+    color: white;
+}
+.meals {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
